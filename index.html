@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <input class="calculator__input" id="display" type="text">
+        <table class="calculator__table">
+            <tr>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "&#40;" onclick   = "handleInput('(')"></td>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "&#41;" onclick   = "handleInput(')')"></td>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "C" onclick       = "handleInput('C')"></td>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "&#8592;" onclick = "handleInput('/')"></td>
+            </tr>
+            <tr>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "7" onclick = "handleInput('7')"></td>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "8" onclick = "handleInput('8')"></td>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "9" onclick = "handleInput('9')"></td>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "/" onclick = "handleInput('/')"></td>
+            </tr>
+            <tr>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "4" onclick = "handleInput('4')"></td>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "5" onclick = "handleInput('5')"></td>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "6" onclick = "handleInput('6')"></td>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "*" onclick = "handleInput('*')"></td>
+            </tr>
+            <tr>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "1" onclick = "handleInput('1')"></td>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "2" onclick = "handleInput('2')"></td>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "3" onclick = "handleInput('3')"></td>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "-" onclick = "handleInput('-')"></td>
+            </tr>
+            <tr>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "0" onclick = "handleInput('0')"></td>
+                <td><input type = "button" class = "calculator__button--darkgray"  value = "." onclick = "handleInput('.')"></td>
+                <td><input type = "button" class = "calculator__button--blue"      value = "=" onclick = "handleInput('=')"></td>
+                <td><input type = "button" class = "calculator__button--lightgray" value = "+" onclick = "handleInput('+')"></td>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>
