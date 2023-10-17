@@ -35,8 +35,14 @@ function operate(operator, num1, num2) {
 
 function handleInput(value) {
     let display = document.getElementById("display")
-    display.value = value;
-}
+    if (value === "clear") {
+        display.value = "";
+    }
+    else {
+        display.value += value;
+    }
+};
+
 
 
 
